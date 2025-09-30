@@ -1,8 +1,21 @@
 ---
 title: "red-pandas"
-author: "Zak Varty"
+author: "Yifan Wang"
 format: html
 ---
+
+```{r}
+options(repos = c(CRAN = "https://cran.rstudio.com/"))
+```
+
+```{r}
+dependencies <- c("tibble")
+install.packages(dependencies)
+```
+```{r}
+tinytex::tlmgr_install("koma-script")
+```
+
 
 # Red Pandas 
 
@@ -61,5 +74,6 @@ The mean of a sample $x = (x_1, \ldots, x_n)$ is calculated as $\bar x = \frac{1
 $$
 \text{Var}(x) = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar x)^2.
 $$
-
----
+$$
+ \mathbb{E}(X_{t+s}|\mathcal{F}_{s})=X_{t}
+$$
